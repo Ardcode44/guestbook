@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
-use hasFactory
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Guest extends Model
 {
+    use hasFactory;
     protected $fillable = [
         'name',
         'phone_number',
